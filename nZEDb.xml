@@ -24,13 +24,6 @@
       </Port>
     </Publish>
   </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/nZEDb</HostDir>
-      <ContainerDir>/var/www</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
   <Environment>
     <Variable>
       <Value>99</Value>
