@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nZEDb</Name>
+  <Repository>porkie/nzedb-1</Repository>
+  <Registry>https://hub.docker.com/r/porkie/nzedb-1/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://lime-technology.com/forum/index.php?topic=46817.0</Support>
+  <Overview/>
+  <Category>Network:Web Network:Proxy Network:Other Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8810]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm-F7MBWu01kA8HYLAO3jKVg5nZS2sCVGQtFrk96MgeJjscCZ0</Icon>
+  <ExtraParams/>
+  <DateInstalled>1476859018</DateInstalled>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8810</HostPort>
+        <ContainerPort>8810</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/nZEDb</HostDir>
+      <ContainerDir>/var/www</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Host Port  1" Target="8810" Default="" Mode="tcp" Description="Container Port: 8810" Type="Port" Display="always" Required="false" Mask="false">8810</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/muximux" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/muximux</Config>
+</Container>
